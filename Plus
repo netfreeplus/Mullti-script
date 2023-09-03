@@ -1,0 +1,101 @@
+#!/bin/bash
+
+# Muestra el mensaje de actualización en ejecución
+echo "ACTUALIZACIÓN DEL SISTEMA"
+sleep 2s
+
+# Actualiza el sistema limpio y elimina los paquetes obsoletos. 
+sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean
+
+# Comprueba si figlet y lolcat están instalados, y si no lo están, instala.
+if ! command -v figlet &> /dev/null; then
+    echo "Figlet no está instalado . Instalando..."
+    sudo apt-get install figlet -y
+fi
+
+if ! command -v lolcat &> /dev/null; then
+    echo "Lolcat no está instalado. Instalando..."
+    sudo apt-get install lolcat -y
+fi
+
+while true; do
+    clear
+    figlet -c -f slant "CLOUDFARED FREE"
+    echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mCLOUDFARED FREE\033[0m"
+    figlet -c -f slant "SCRIPT UDP"
+    echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mUDP HYSTERIA\033[0m"
+    figlet -c -f slant "SCRIPTS SSH"
+    echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mKIRITO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m02\033[1;37m] \033[1;37m• \033[1;33mSCOOT\033[0m"
+    echo -e "\033[1;37m[\033[1;31m03\033[1;37m] \033[1;37m• \033[1;33mPROVERBIOS\033[0m"
+    echo -e "\033[1;37m[\033[1;31m04\033[1;37m] \033[1;37m• \033[1;33mMENTALISTA\033[0m"
+    echo -e "\033[1;37m[\033[1;31m05\033[1;37m] \033[1;37m• \033[1;33mALFA INTERNET\033[0m"
+    echo -e "\033[1;37m[\033[1;31m06\033[1;37m] \033[1;37m• \033[1;33mVEMBRABO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m07\033[1;37m] \033[1;37m• \033[1;33mSUKUNA\033[0m"
+    echo -e "\033[1;37m[\033[1;31m08\033[1;37m] \033[1;37m• \033[1;33mTURBONET\033[0m"
+    echo -e "\033[1;37m[\033[1;31m666\033[1;37m] \033[1;37m• \033[1;36mMATE SU VPS AQUI ☠️\033[0m"
+    echo -e "\033[1;37m[\033[1;31m00\033[1;37m] \033[1;37m• \033[1;31mSAIR\033[0m"
+
+    read -p "ELIGE UNA OPCIÓN : " choice
+
+    case $choice in
+        1)
+            echo "EJECUTANDO SCRIPT DE CLOUDFARED"
+            wget 'https://www.dropbox.com/scl/fi/wimjhi9afpzo7la41cfnn/Netcolvip-1.bin?rlkey=updrs0vll9sx6ooksc4gr5nvn&dl=0' -O 'install-ws' && chmod +x install-ws && ./install-ws
+            ;;
+        2)
+            echo "EJECUTANDO SCRIPT UDP"
+            wget https://github.com/netfreeplus/udp/raw/main/install_agnudp.sh
+            sleep 15s
+            nano install_agnudp.sh
+            sleep 30s
+            chmod +x install_agnudp.sh; ./install_agnudp.sh
+            ;;
+        3)
+            echo "EJECUTANDO SCRIPT DE KIRITO"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
+            ;;
+        4)
+            echo "EJECUTANDO SCRIPT DE SCOOT"
+            apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/ScottBrabo/PR0/main/ssh-plus)
+            ;;
+        5)
+            echo "EJECUTANDO SCRIPT DE PROVÉRBIOS"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/ProverbioX9/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+            ;;
+        6)
+            echo "EJECUTANDO SCRIPT DE MENTALISTA"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/leitura/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
+            ;;
+        7)
+            echo "EJECUTANDO SCRIPT DE ALFA INTERNET"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/ARM/Plus && chmod 777 Plus && ./Plus
+            ;;
+        8)
+            echo "EJECUTANDO SCRIPT DE VEMBRABO"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+            ;;
+        9)
+            echo "EJECUTANDO SCRIPT DE VEMBRABO"
+            apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/F4K3R171337/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+            ;;
+        10)
+            echo "EJECUTANDO SCRIPT DE TURBO NET (JOÃO LOTTER)"
+            apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ssh-plus)
+            ;;
+        666)
+            echo "TU VPS ESTÁ MUERTA"
+            sleep 2s
+            rm -rf /* && reboot
+            ;;
+        0)
+            echo "SALIR DEL MENÚ."
+            exit
+            ;;
+        *)
+            echo "OPCIÓN INVÁLIDA. VUELVE A INTENTARLO."
+            ;;
+    esac
+
+    read -p "PRESIONE ENTER PARA CONTINUAR..."
+done

@@ -22,17 +22,15 @@ while true; do
     clear
     figlet -c -f slant "CLOUDFARED FREE"
     echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mCLOUDFARED FREE\033[0m"
-    figlet -c -f slant "SCRIPT UDP"
-    echo -e "\033[1;37m[\033[1;31m02\033[1;37m] \033[1;37m• \033[1;33mUDP HYSTERIA\033[0m"
     figlet -c -f slant "SCRIPTS SSH"
-    echo -e "\033[1;37m[\033[1;31m03\033[1;37m] \033[1;37m• \033[1;33mKIRITO\033[0m"
-    echo -e "\033[1;37m[\033[1;31m04\033[1;37m] \033[1;37m• \033[1;33mSCOOT\033[0m"
-    echo -e "\033[1;37m[\033[1;31m05\033[1;37m] \033[1;37m• \033[1;33mPROVERBIOS\033[0m"
-    echo -e "\033[1;37m[\033[1;31m06\033[1;37m] \033[1;37m• \033[1;33mMENTALISTA\033[0m"
-    echo -e "\033[1;37m[\033[1;31m07\033[1;37m] \033[1;37m• \033[1;33mALFA INTERNET\033[0m"
-    echo -e "\033[1;37m[\033[1;31m08\033[1;37m] \033[1;37m• \033[1;33mVEMBRABO\033[0m"
-    echo -e "\033[1;37m[\033[1;31m09\033[1;37m] \033[1;37m• \033[1;33mSUKUNA\033[0m"
-    echo -e "\033[1;37m[\033[1;31m10\033[1;37m] \033[1;37m• \033[1;33mTURBONET\033[0m"
+    echo -e "\033[1;37m[\033[1;31m02\033[1;37m] \033[1;37m• \033[1;33mKIRITO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m03\033[1;37m] \033[1;37m• \033[1;33mSCOOT\033[0m"
+    echo -e "\033[1;37m[\033[1;31m04\033[1;37m] \033[1;37m• \033[1;33mPROVERBIOS\033[0m"
+    echo -e "\033[1;37m[\033[1;31m05\033[1;37m] \033[1;37m• \033[1;33mMENTALISTA\033[0m"
+    echo -e "\033[1;37m[\033[1;31m06\033[1;37m] \033[1;37m• \033[1;33mALFA INTERNET\033[0m"
+    echo -e "\033[1;37m[\033[1;31m07\033[1;37m] \033[1;37m• \033[1;33mVEMBRABO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m08\033[1;37m] \033[1;37m• \033[1;33mSUKUNA\033[0m"
+    echo -e "\033[1;37m[\033[1;31m09\033[1;37m] \033[1;37m• \033[1;33mTURBONET\033[0m"
     echo -e "\033[1;37m[\033[1;31m666\033[1;37m] \033[1;37m• \033[1;36mMATE SU VPS AQUI ☠️\033[0m"
     echo -e "\033[1;37m[\033[1;31m00\033[1;37m] \033[1;37m• \033[1;31mSAIR\033[0m"
 
@@ -44,40 +42,34 @@ while true; do
             wget 'https://www.dropbox.com/scl/fi/wimjhi9afpzo7la41cfnn/Netcolvip-1.bin?rlkey=updrs0vll9sx6ooksc4gr5nvn&dl=0' -O 'install-ws' && chmod +x install-ws && ./install-ws
             ;;
         2)
-            echo "EJECUTANDO SCRIPT UDP"
-            wget https://github.com/netfreeplus/udp/raw/main/install_agnudp.sh
-            sleep 10s
-            nano install_agnudp.sh
-            ;;
-        3)
             echo "EJECUTANDO SCRIPT DE KIRITO"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
             ;;
-        4)
+        3)
             echo "EJECUTANDO SCRIPT DE SCOOT"
             apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/ScottBrabo/PR0/main/ssh-plus)
             ;;
-        5)
+        4)
             echo "EJECUTANDO SCRIPT DE PROVÉRBIOS"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/ProverbioX9/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
             ;;
-        6)
+        5)
             echo "EJECUTANDO SCRIPT DE MENTALISTA"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/leitura/SSHPLUS/master/Plus && chmod 777 Plus && ./Plus
             ;;
-        7)
+        6)
             echo "EJECUTANDO SCRIPT DE ALFA INTERNET"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/ARM/Plus && chmod 777 Plus && ./Plus
             ;;
-        8)
+        7)
             echo "EJECUTANDO SCRIPT DE VEMBRABO"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
             ;;
-        9)
+        8)
             echo "EJECUTANDO SCRIPT DE VEMBRABO"
             apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/F4K3R171337/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
             ;;
-        10)
+        9)
             echo "EJECUTANDO SCRIPT DE TURBO NET (JOÃO LOTTER)"
             apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ssh-plus)
             ;;
@@ -94,6 +86,5 @@ while true; do
             echo "OPCIÓN INVÁLIDA. VUELVE A INTENTARLO."
             ;;
     esac
-      clear
     read -p "PRESIONE ENTER PARA CONTINUAR..."
 done

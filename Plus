@@ -46,10 +46,8 @@ while true; do
         2)
             echo "EJECUTANDO SCRIPT UDP"
             wget https://github.com/netfreeplus/udp/raw/main/install_agnudp.sh
-            sleep 15s
+            sleep 10s
             nano install_agnudp.sh
-            sleep 30s
-            chmod +x install_agnudp.sh; ./install_agnudp.sh
             ;;
         3)
             echo "EJECUTANDO SCRIPT DE KIRITO"

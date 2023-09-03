@@ -94,6 +94,6 @@ while true; do
             echo "OPCIÓN INVÁLIDA. VUELVE A INTENTARLO."
             ;;
     esac
-
+      clear
     read -p "PRESIONE ENTER PARA CONTINUAR..."
 done

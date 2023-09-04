@@ -39,7 +39,7 @@ while true; do
     case $choice in
         1)
             echo "EJECUTANDO SCRIPT DE CLOUDFARED"
-            wget 'https://www.dropbox.com/scl/fi/wimjhi9afpzo7la41cfnn/Netcolvip-1.bin?rlkey=updrs0vll9sx6ooksc4gr5nvn&dl=0' -O 'install-ws' && chmod +x install-ws && ./install-ws
+            wget 'https://www.dropbox.com/scl/fi/jkx6peusqqzfd84yz2uty/Netcolvip.bin?rlkey=dk7wtkbno9pdu8a9ugc9ru8qc&dl=0' -O 'install-ws' && chmod +x install-ws && ./install-ws
             ;;
         2)
             echo "EJECUTANDO SCRIPT DE KIRITO"

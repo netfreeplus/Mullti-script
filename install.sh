@@ -102,7 +102,7 @@ main() {
     clear
 
     echo '---------------------------------'
-    echo -ne '     \e[1;33mCHECKUSER\e[0m'
+    echo -ne '     \e[1;33mCHECKUSER NETCOL-VIP\e[0m'
     if [[ -e /usr/local/bin/checkuser ]]; then
         echo -e ' \e[1;32mv'$(/usr/local/bin/checkuser --version | cut -d' ' -f2)'\e[0m'
     else

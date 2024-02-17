@@ -1,0 +1,90 @@
+{
+    "Version": "1.0.1",
+    "ReleaseNotes": "¡Nueva actualización disponible!🧩 \n\n🔥NOVEDADES: MEJORAMIENTO DE SERVIDORES.\n\nMANTÉN LA APLICACIÓN SIEMPRE ACTUALIZADA PARA DISFRUTAR DE LOS PRÓXIMOS SERVICIOS 🏆\nSi usted está conectado y no le funciona correctamente, comuníquese con SOPORTE. ⚙️\n 😎¡DISFRUTA!😎",
+    "Sms": "",
+    "UrlUpdate": "",
+    "EmailFeedback": "",
+    "UrlContato": "",
+    "UrlTermos": "",
+    "CheckUser": "true",
+    "Udp": [
+        {
+            "Porta": "7300"
+        }
+    ],
+    "Servers": [
+        {
+            "Name": "SERVIDOR BR 6",
+            "TYPE": "free",
+            "FLAG": "br.png",
+            "ServerIP": "164.90.128.228",
+            "CheckUser": "http://164.90.128.228:5454/checkUser",
+            "ServerPort": "22",
+            "SSLPort": "443",
+            "USER": "",
+            "PASS": ""
+        }
+    ],
+    "Networks": [
+        {
+      "Name": "🔥SELECCIONA TU OPERADOR🔥", 
+      "FLAG": "",
+      "Payload": "",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Ssl"
+   },
+    {
+      "Name": "CLARO ✅",
+            "FLAG": "vivo",
+            "Payload": "HEAD \/ HTTP\/1.1[crlf]Host: gt.claropayment.com[crlf][crlf][split]GET \/ HTTP\/1.1[crlf]Host: d333qzgvtqvzil.cloudfront.net[crlf]Connection: Upgrade[crlf]Speed-100: [crlf]Upgrade: Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "gt.claropayment.com",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+      "Name": "LIBERTY Música✅",
+            "FLAG": "vivo",
+            "Payload": "",
+            "SNI": "twitter.com",
+            "TlsIP": "f.netcol.nl",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": "Ssl"
+        },
+        {
+      "Name": "Liberty Música✅",
+            "FLAG": "vivo",
+            "Payload": "",
+            "SNI": "spotify.com",
+            "TlsIP": "f.netcol.nl",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": "Ssl"
+        },
+        {
+      "Name": "Liberty WhatsApp✅",
+            "FLAG": "vivo",
+            "Payload": "",
+            "SNI": "whatsapp.com",
+            "TlsIP": "f.netcol.nl",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": "Ssl"
+        },
+        {
+      "Name": "Liberty Video✅",
+            "FLAG": "vivo",
+            "Payload": "",
+            "SNI": "netflix.com",
+            "TlsIP": "f.netcol.nl",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": "Ssl"
+        }
+    ]
+}

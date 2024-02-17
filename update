@@ -1,8 +1,8 @@
 {
     "Version": "1.0.1",
     "ReleaseNotes": "¡Nueva actualización disponible!🧩 \n\n🔥NOVEDADES: MEJORAMIENTO DE SERVIDORES.\n\nMANTÉN LA APLICACIÓN SIEMPRE ACTUALIZADA PARA DISFRUTAR DE LOS PRÓXIMOS SERVICIOS 🏆\nSi usted está conectado y no le funciona correctamente, comuníquese con SOPORTE. ⚙️\n 😎¡DISFRUTA!😎",
-    "Sms": "",
-    "UrlUpdate": "",
+    "Sms": "https://github.com/netfreeplus/Mullti-script/raw/main/sms",
+    "UrlUpdate": "https://github.com/netfreeplus/Mullti-script/raw/main/update",
     "EmailFeedback": "",
     "UrlContato": "",
     "UrlTermos": "",
